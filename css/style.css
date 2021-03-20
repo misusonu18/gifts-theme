@@ -49,3 +49,7 @@
 .list-group-item {
     border: none !important;
 }
+
+.footer-link {
+    text-decoration: none !important;
+}
