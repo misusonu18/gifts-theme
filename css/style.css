@@ -1,0 +1,47 @@
+* {
+    font-family: sans-serif;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.fa-star {
+    color: orange;
+}
+
+.product-price {
+    font-weight: bold;
+}   
+
+.height {
+    height: 35rem;
+    width: 100%;
+}
+
+.container {
+    padding: 0px;
+}
+
+.category-title {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+
+.secondary {
+    background-color: lightgrey;
+}
+
+.list-group-item {
+    background-color: transparent !important;
+}
+
+.navbar-custom {
+    background-color: gainsboro;
+}
+
+.nav-bar {
+    margin: auto;
+    max-width: 960px;
+    background-color: gainsboro;
+}
