@@ -9,11 +9,13 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container d-none d-lg-block d-md-block d-sm-block">
-        <div class="row bg-secondary d-flex align-items-center">
+        <div class="row secondary d-flex align-items-center">
             <div class="col-lg-6">
                 <p class="text-uppercase text-sm-start m-2 ms-lg-5">
                     Find The Perfect Gift, Every Time.
@@ -22,34 +24,124 @@
 
             <div class="col-lg-6">
                 <p class="text-uppercase text-sm-start m-2 ms-lg-5">
-                    +000000000000
+                    +180018001800
                 </p>
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <!-- Mobile Navigation -->
+    <nav class="navbar navbar-light bg-light d-block d-lg-none d-md-none d-sm-none d-flex sticky-top">
+        <button class="navbar-toggler" 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#navbar-items" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand text-danger" href="index.html">
+            Gifts <i class="fa fa-gifts"></i>
+        </a>
+
+        <button class="navbar-toggler" 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#navbar-account" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"
+        >
+            <span class="fa fa-user"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbar-items">
+            <ul class="navbar-nav mr-auto nav-pills nav-justified">
+                <li class="nav-item text-uppercase">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">Him</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">Her</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">Teen</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">Kids</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">baby</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-account">
+            <ul class="navbar-nav justify-content-end">
+                <li class="nav-item active">
+                    <a class="nav-link disabled" href="#">Leo</a>            
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign In</a>            
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign Up</a>            
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Laptop Navigation -->
+    <div class="container d-none d-lg-block d-md-block d-sm-block">
 		<div class="row">
-			<div class="col-6 mt-3">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-3 d-flex justify-content-center justify-content-lg-start justify-content-md-start justify-content-sm-start">
 				<div class="navbar-brand">
-					<p>
-						Gifts
+					<p class="h1 text-danger">
+						Gifts <i class="fa fa-gifts"></i>
 					</p>
 				</div>
 			</div>
 
-			<div class="col-6">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-6">
 				<div class="row mt-3">
                     <div class="col-4">
-                        <a href="#">User Account</a>
+                        <div class="dropdown">
+                            <a class="btn btn-light dropdown-toggle" id="user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Account 
+                                <i class="fa fa-user-alt"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="user-dropdown">
+                              <a class="dropdown-item disabled" href="#">Leo</a>
+                              <a class="dropdown-item" href="#">Sign In</a>
+                              <a class="dropdown-item" href="#">Sign Up</a>
+                            </div>
+                          </div>
+                    </div>  
+
+                    <div class="col-4">
+                        <a href="#" class="btn btn-light">
+                            Live Chart
+                            <i class="fa fa-comment-dots"></i>
+                        </a>
                     </div>
 
                     <div class="col-4">
-                        <a href="#">User Account</a>
-                    </div>
-
-                    <div class="col-4">
-                        <a href="#">User Account</a>
+                        <a href="#" class="btn btn-light">
+                            Cart
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
                     </div>
                 </div>
 
@@ -68,7 +160,7 @@
     </div>
 
     <div class="container">
-        <div class="row mt-3 border border-4">
+        <div class="row mt-3 border border-4 m-0">
             <div class="col-12 d-flex justify-content-center">
                 <p class="h1 text-info d-none d-lg-block d-md-block d-sm-block">
                     Easter Sale! 25% off sitewide + 40% off face masks.
@@ -81,60 +173,95 @@
         </div>
     </div>
 
-    <div class="container d-none d-lg-block d-md-block d-sm-block">
-        <div class="row mt-2">
-            <div class="col-lg-9 col-md-9">
-                <img src="https://images.unsplash.com/photo-1589863465747-f337e97f8f3d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1022&q=80" class="img-fluid height" alt="">
-            </div>
-
-            <div class="col-lg-3 col-md-3">
-                <img src="https://images.unsplash.com/photo-1602734846297-9299fc2d4703?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1952&q=80" class="img-fluid height" alt="">
+    <div class="container-fluid sticky-top navbar-custom mt-2">
+        <div class="container">
+            <div class="row d-none d-lg-block d-md-block d-sm-block">
+                <div class="col-12 col-lg-12 col-md-12 col-sm-12 pr-0 pl-0">    
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="nav-item text-uppercase">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">Him</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">Her</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">Teen</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">Kids</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">baby</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="container d-none d-lg-block d-md-block d-sm-block">
         <div class="row mt-2">
-            <div class="col-3">
+            <div class="col-lg-8 col-md-8 pl-0">
+                <img src="https://images.unsplash.com/photo-1589863465747-f337e97f8f3d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1022&q=80" class="img-fluid mr-4 height" alt="image-1">
+            </div>
+
+            <div class="col-lg-4 col-md-4 pr-0 pl-0">
+                <img src="https://images.unsplash.com/photo-1602734846297-9299fc2d4703?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1952&q=80" class="img-fluid height " alt="image-2">
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-none d-lg-block d-md-block d-sm-block">
+        <div class="row mt-2">
+            <div class="col-4 pl-0">
                 <img src="https://images.unsplash.com/photo-1602734846297-9299fc2d4703?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1952&q=80" class="img-fluid height" alt="">
             </div>
             
-            <div class="col-9">
+            <div class="col-8 pr-0 pl-0">
                 <img src="https://images.unsplash.com/photo-1589863465747-f337e97f8f3d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1022&q=80" class="img-fluid height" alt="">
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container mt-5">
         <p class="h1 text-center category-title">
             Who is the recipient?
         </p>
+        <hr>
 
-        <div class="row d-flex justify-content-around justify-content-lg-center">
-            <div class="col-12 col-lg-3 col-md-3 col-sm-3 d-flex justify-content-center">
+        <div class="row m-0 d-flex justify-content-around justify-content-lg-center">
+            <div class="col-6 col-lg-3 col-md-3 col-sm-3 d-flex justify-content-center">
                 <figure class="figure text-center">
                     <img src="images/9.png" class="figure-img card-img-top rounded-circle w-50" alt="Him">                
                     <figcaption class="figure-caption h4">Him</figcaption>
                 </figure>
             </div>
 
-            <div class="col-12 col-lg-3 col-md-3 col-sm-3 d-flex justify-content-center">
+            <div class="col-6 col-lg-3 col-md-3 col-sm-3 d-flex justify-content-center">
                 <figure class="figure text-center">
-                    <img src="images/9.png" class="figure-img card-img-top rounded-circle w-50" alt="Him">                
+                    <img src="images/9.png" class="figure-img card-img-top rounded-circle w-50" alt="Her">                
                     <figcaption class="figure-caption h4">Her</figcaption>
                 </figure>
             </div>
 
-            <div class="col-12 col-lg-3 col-md-3 col-sm-3 d-flex justify-content-center">
+            <div class="col-6 col-lg-3 col-md-3 col-sm-3 d-flex justify-content-center">
                 <figure class="figure text-center">
-                    <img src="images/9.png" class="figure-img card-img-top rounded-circle w-50" alt="Him">                
+                    <img src="images/9.png" class="figure-img card-img-top rounded-circle w-50" alt="Kids">                
                     <figcaption class="figure-caption h4">Kids</figcaption>
                 </figure>
             </div>
 
-            <div class="col-12 col-lg-3 col-md-3 col-sm-3 d-flex justify-content-center">
+            <div class="col-6 col-lg-3 col-md-3 col-sm-3 d-flex justify-content-center">
                 <figure class="figure text-center">
-                    <img src="images/9.png" class="figure-img card-img-top rounded-circle w-50" alt="Him">                
+                    <img src="images/9.png" class="figure-img card-img-top rounded-circle w-50" alt="Baby">                
                     <figcaption class="figure-caption h4">Baby</figcaption>
                 </figure>
             </div>
@@ -142,7 +269,7 @@
     </div>
     
     <div class="container">
-        <div class="row">
+        <div class="row m-0">
             <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-3 mb-4 d-flex justify-content-center">
                 <div class="card" style="width: 18rem;">
                     <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80" class="card-img-top" alt="...">
@@ -424,7 +551,7 @@
     <div class="footer bg-secondary p-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-3 col-md-3">
+                <div class="col-12 col-lg-3 col-md-3 pt-4">
                     <div>
                         <p class="text-uppercase">
                             our company
@@ -432,17 +559,46 @@
                         <hr>
 
                         <ul class="list-group">
-                            <li class="list-group-item list-group-item-secondary"> About Us </li>
-                            <li class="list-group-item list-group-item-secondary"> Blog </li>
-                            <li class="list-group-item list-group-item-secondary"> Privacy Policy </li>
-                            <li class="list-group-item list-group-item-secondary"> Site Map </li>
-                            <li class="list-group-item list-group-item-secondary"> Supplier Code Of Product </li>
-                            <li class="list-group-item list-group-item-secondary"> Terms Of Use </li>
+                            <a href="#" class="text-dark">
+                                <li class="list-group-item">
+                                    About Us
+                                </li>
+                            </a>
+
+                            <a href="#" class="text-dark">
+                                <li class="list-group-item">
+                                    Blog
+                                </li>
+                            </a>
+
+                            <a href="#" class="text-dark">
+                                <li class="list-group-item">
+                                    Privacy Policy
+                                </li>
+                            </a>
+
+                            <a href="#" class="text-dark">
+                                <li class="list-group-item">
+                                    Site Map
+                                </li>
+                            </a>
+
+                            <a href="#" class="text-dark">
+                                <li class="list-group-item">
+                                    Supplier Code Of Product
+                                </li>
+                            </a>
+
+                            <a href="#" class="text-dark">
+                                <li class="list-group-item">
+                                    Term of Use
+                                </li>
+                            </a>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-3 col-md-3">
+                <div class="col-12 col-lg-3 col-md-3 pt-4">
                     <div>
                         <p class="text-uppercase">
                             Help
@@ -450,15 +606,34 @@
                         <hr>
 
                         <ul class="list-group">
-                            <li class="list-group-item list-group-item-secondary"> Apparel Size Charts </li>
-                            <li class="list-group-item list-group-item-secondary"> Contact Us </li>
-                            <li class="list-group-item list-group-item-secondary"> Frequently Asked Questions </li>
-                            <li class="list-group-item list-group-item-secondary"> How To Order </li>
+                            <a href="#" class="text-dark">
+                                <li class="list-group-item">
+                                    Apparel Size Charts
+                                </li>
+                            </a>
+
+                            <a href="#" class="text-dark">
+                                <li class="list-group-item">
+                                    Contact Us
+                                </li>
+                            </a>
+
+                            <a href="#" class="text-dark">
+                                <li class="list-group-item">
+                                    Frequently Asked Questions
+                                </li>
+                            </a>
+
+                            <a href="#" class="text-dark">
+                                <li class="list-group-item">
+                                    How To Order
+                                </li>
+                            </a>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-3 col-md-3">
+                <div class="col-12 col-lg-3 col-md-3 pt-4">
                     <div>
                         <p class="text-uppercase">
                             Account Info
@@ -466,25 +641,44 @@
                         <hr>
 
                         <ul class="list-group">
-                            <li class="list-group-item list-group-item-secondary"> My Account </li>
-                            <li class="list-group-item list-group-item-secondary"> Order Tracking </li>
-                            <li class="list-group-item list-group-item-secondary"> Reminder Service </li>
-                            <li class="list-group-item list-group-item-secondary"> Shipping, Returns & Fees </li>
+                            <a href="#" class="text-dark">
+                                <li class="list-group-item">
+                                    My Account
+                                </li>
+                            </a>
+
+                            <a href="#" class="text-dark">
+                                <li class="list-group-item">
+                                    Order Tracking
+                                </li>
+                            </a>
+
+                            <a href="#" class="text-dark">
+                                <li class="list-group-item">
+                                    Reminder Service
+                                </li>
+                            </a>
+
+                            <a href="#" class="text-dark">
+                                <li class="list-group-item">
+                                    Shipping, Returns & Free
+                                </li>
+                            </a>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-3 col-md-3">
+                <div class="col-12 col-lg-3 col-md-3 pt-4">
                     <div>
                         <p class="text-uppercase">
                             Sign Up
                         </p>
                         <hr>
 
-                        <div class="form-inline my-2 my-lg-0 d-flex">
-                            <input class="form-control w-75" type="search" placeholder="Search">
+                        <div class="form-inline">
+                            <input class="form-control w-100" type="search" placeholder="Email Address">
                             
-                            <button class="btn btn-outline-success mt-2 w-20" type="submit">Search</button>
+                            <button class="btn btn-warning w-100 mt-2" type="submit">Submit</button>
                         </div>
                     </div>
                 </div>
@@ -501,7 +695,7 @@
 
         <div>
             <p>
-                Certain products not eligible for offers or discounts (including clearance items), and such designation will appear on the product detail page. Limit one offer or discount per order. Offers and discounts will appear at last checkout screen and cannot be combined with other offers or discounts. Offers and discounts do not apply to gift cards or certificates, international or same-day delivery, shipping, care and handling, personalization fees, taxes, third-party hosted products (e.g. wine). Free Shipping offers, if any, are valid for standard delivery.
+                Certain products not eligible for offers or discounts (including clearance items), and such designation will appear on the product detail page. Limit one offer or discount per order. Offers and discounts will appear at last checkout screen and cannot be combined with other offers or discounts.
             </p>
         </div>
 
@@ -515,7 +709,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
-    <script src="dummy_data.json"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
