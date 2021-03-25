@@ -6,7 +6,7 @@
     color: red;
 }
 
-.fa-star {
+.fa-star, .fa-star-half-alt {
     color: orange;
 }
 
@@ -52,4 +52,12 @@
 
 .footer-link {
     text-decoration: none !important;
+}
+
+.image-height {
+    height: 180px;
+}
+
+.middle-logo {
+    margin-left: 200px;
 }
