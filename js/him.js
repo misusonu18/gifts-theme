@@ -7,12 +7,12 @@ axios({
 
         var cardItem = "";
         data.forEach(element => {
-            console.log(element.Image);
+            console.log(element.image);
             cardItem += "<div class='col-12 col-xl-3 col-lg-3 col-md-6 col-sm-3 mb-4 d-flex justify-content-center'>" +
                     "<div class='card' style='width: 18rem;'>"+
-                        "<img src='"+ element.Image +"' class='card-img-top image-height' alt='"+ element.product_name +"'>"+
+                        "<img src='"+ element.image +"' class='card-img-top image-height' alt='"+ element.name +"'>"+
                         "<div class='card-body'>"+
-                            "<h5 class='card-title product-name'>"+ element.product_name +"</h5>"+
+                            "<h5 class='card-title product-name'>"+ element.name +"</h5>"+
                             "<div class='d-flex justify-content-between'>"+
                                 "<div class='text-left'>"+
                                     "<i class='fa fa-heart'></i>"+
@@ -25,7 +25,7 @@ axios({
                                     "<i class='fa fa-star-half-alt'></i> "+                       
                                 "</div>"+
                             "</div>"+
-                            "<p class='card-text mr-0 product-price h6'>$ "+ element.product_price +"</p>"+
+                            "<p class='card-text mr-0 product-price h6'>$ "+ element.price +"</p>"+
                         "</div>"+
                     "</div>"+
                 "</div>"
