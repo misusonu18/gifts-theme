@@ -82,3 +82,7 @@
 .display-none {
     display: none !important;
 }
+
+a {
+    cursor: pointer;
+}
