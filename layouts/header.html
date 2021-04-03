@@ -1,0 +1,218 @@
+<div class="container-fluid">
+    <div class="row secondary d-flex align-items-center">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-6 text-center">
+            <p class="text-uppercase text-danger text-sm-start m-2 ms-lg-5">
+                Find The Perfect Gift, Every Time.
+            </p>
+        </div>
+
+        <div class="col-12 col-lg-6 col-md-6 col-sm-6 text-center">
+            <p class="text-uppercase text-danger text-sm-start m-2 ms-lg-5">
+                1800-1800-18
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Mobile Navigation -->
+<nav class="navbar navbar-light bg-light d-block d-lg-none d-flex sticky-top">
+    <button class="navbar-toggler" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#navbar-items" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand brand-size text-danger dancing-script" href="index.html">
+        Gifts <i class="fa fa-gifts"></i>
+    </a>
+
+    <button class="navbar-toggler" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#navbar-account" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+    >
+        <span class="fa fa-user"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbar-items">
+        <ul class="navbar-nav mr-auto nav-pills nav-justified">
+            <li class="nav-item text-uppercase">
+                <a class="nav-link active" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="him.html">Him</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="her.html">Her</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="teen.html">Teen</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="kids.html">Kids</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="baby.html">baby</a>
+            </li>
+
+            <li>
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="input-group">
+                            <input type="search" 
+                                name="search" 
+                                id="search" 
+                                class="form-control" 
+                                placeholder="Search"
+                                onchange="searchFromMobile()"
+                            >
+                            <span class="input-group-text" id="search">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-account">
+        <ul class="navbar-nav justify-content-end">
+            <li class="nav-item active">
+                <a class="nav-link disabled" href="#">Leo</a>            
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Sign In</a>            
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="register.html">Sign Up</a>            
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Laptop Navigation -->
+<div class="container d-none d-lg-block d-md-none d-sm-none">
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-3 d-flex justify-content-center justify-content-lg-start justify-content-md-start justify-content-sm-start">
+            <div class="navbar-brand">
+                <a href="index.html" class="h1 text-danger middle-logo dancing-script text-decoration-none">
+                    Gifts <i class="fa fa-gifts"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="row mt-3">
+                <div class="col-4">
+                    <div class="dropdown">
+                        <a class="btn btn-light dropdown-toggle" id="user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Account 
+                            <i class="fa fa-user-alt"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="user-dropdown">
+                          <a class="dropdown-item disabled" href="#">Leo</a>
+                          <a class="dropdown-item" href="login.html">Sign In</a>
+                          <a class="dropdown-item" href="register.html">Sign Up</a>
+                        </div>
+                      </div>
+                </div>  
+
+                <div class="col-4">
+                    <a href="#" class="btn btn-light">
+                        Live Chart
+                        <i class="fa fa-comment-dots"></i>
+                    </a>
+                </div>
+
+                <div class="col-4">
+                    <a href="#" class="btn btn-light">
+                        Cart
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col">
+                    <div class="input-group">
+                        <input type="search" 
+                            name="search" 
+                            id="search-products" 
+                            class="form-control" 
+                            placeholder="Search"
+                            onchange="searchData()"
+                        >
+                        <span class="input-group-text" id="search-products">
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row mt-3 border border-4 m-0">
+        <div class="col-12 d-flex justify-content-center">
+            <p class="h1 text-info d-none d-lg-block d-md-block d-sm-block">
+                Easter Sale! <ins class="font-weight-bolder"> 25% off sitewide </ins> + 
+                <ins class="font-weight-bolder">40% off face masks</ins>.
+            </p>
+
+            <p class="h4 text-info text-center d-lg-none d-md-none d-sm-none">
+                Easter Sale! 25% off sitewide + 40% off face masks.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid sticky-top navbar-custom mt-2">
+    <div class="container">
+        <div class="row d-none d-lg-block d-md-none d-sm-none">
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 pr-0 pl-0">    
+                <ul class="nav nav-pills nav-justified" id="navbar">
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link active" onclick="navbar('home')">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" onclick="navbar('him')">Him</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" onclick="navbar('her')">Her</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" onclick="navbar('teen')">Teen</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" onclick="navbar('kids')">Kids</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" onclick="navbar('baby')">baby</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
