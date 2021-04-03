@@ -41,14 +41,6 @@ function getAllProducts() {
 
 function searchData() {
     let search = document.getElementById('search-products');
-
-    let image1 = document.getElementById("image1");
-    let image2 = document.getElementById("image2");
-    let recipient = document.getElementById("recipient");
-
-    image1.classList.remove("d-lg-block", "d-md-block", "d-sm-block");
-    image2.classList.remove("d-lg-block", "d-md-block", "d-sm-block");
-    recipient.classList.remove("d-block");
     
     axios({
         method: 'get',
@@ -379,4 +371,43 @@ function productDetailPage() {
         document.getElementById('product-image').innerHTML = productImage;
         document.getElementById('product-details').innerHTML = productDetails;
     });
+}
+
+function footer() {
+    axios({
+        method: 'get',
+        url: '/layouts/footer.html',
+    }).then((xhr) => {
+        document.getElementById('footer').innerHTML = xhr.data;
+    });
+}
+
+function header() {
+    axios({
+        method: 'get',
+        url: '/layouts/header.html',
+    }).then((xhr) => {
+        document.getElementById('header').innerHTML = xhr.data;
+    });
+}
+
+function navbar(linkName) {
+    if (linkName == 'home') {
+        window.location.assign('index.html');
+    }
+    if (linkName == 'him') {
+        window.location.assign('him.html');
+    }
+    if (linkName == 'her') {
+        window.location.assign('her.html');
+    }
+    if (linkName == 'teen') {
+        window.location.assign('teen.html');
+    }
+    if (linkName == 'kids') {
+        window.location.assign('kids.html');
+    }
+    if (linkName == 'baby') {
+        window.location.assign('baby.html');
+    }
 }
